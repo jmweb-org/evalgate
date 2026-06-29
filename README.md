@@ -1,5 +1,10 @@
 # evalgate
 
+[![CI](https://github.com/jmweb-org/evalgate/actions/workflows/ci.yml/badge.svg)](https://github.com/jmweb-org/evalgate/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/evalgate.svg)](https://pypi.org/project/evalgate/)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Decide whether an eval delta is a real regression or just sampling noise, and
 fail CI only when it is real.
 
