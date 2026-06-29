@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "evalgate"
+name = "evalgate-cli"
 version = "0.2.0"
 description = "Decide whether an eval delta is a real regression or sampling noise."
 readme = "README.md"

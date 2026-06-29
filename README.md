@@ -1,7 +1,7 @@
 # evalgate
 
 [![CI](https://github.com/jmweb-org/evalgate/actions/workflows/ci.yml/badge.svg)](https://github.com/jmweb-org/evalgate/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/evalgate.svg)](https://pypi.org/project/evalgate/)
+[![PyPI](https://img.shields.io/pypi/v/evalgate-cli.svg)](https://pypi.org/project/evalgate-cli/)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -28,7 +28,7 @@ alpha       0.05
 ## Install
 
 ```console
-$ pip install evalgate
+$ pip install evalgate-cli
 ```
 
 Pure standard library plus typer and rich. No heavy dependencies.
