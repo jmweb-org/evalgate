@@ -77,6 +77,21 @@ continuity-corrected chi-squared approximation for large samples.
 | `regression` | Significantly worse | 1 |
 
 A bad invocation (scores out of range, missing column, unreadable file) exits 2.
+## JSON output
+
+When using the `--json` flag, `evalgate` returns a JSON object with the following fields:
+
+| Field                    | Type      | Description                                                                                             |
+| ------------------------ | --------- | ------------------------------------------------------------------------------------------------------- |
+| `verdict`                | `string`  | One of `improvement`, `unchanged`, `noise`, or `regression`.                                            |
+| `p_value`                | `float`   | The p-value from the statistical test.                                                                  |
+| `difference`             | `float`   | Signed difference between candidate and baseline. A negative value means the candidate performed worse. |
+| `alpha`                  | `float`   | Significance threshold used for the test.                                                               |
+| `is_regression`          | `boolean` | `true` if the result is a statistically significant regression; otherwise `false`.                      |
+| `test`                   | `string`  | Statistical test used (`two_proportion_z` or `mcnemar`).                                                |
+| `baseline_only_correct`  | `integer` | *(Paired mode only)* Number of examples only the baseline answered correctly.                           |
+| `candidate_only_correct` | `integer` | *(Paired mode only)* Number of examples only the candidate answered correctly.                          |
+
 
 ## What it does and does not do
 
