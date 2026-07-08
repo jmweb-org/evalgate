@@ -28,8 +28,8 @@ alpha       0.05
 ## Install
 
 ```console
-$ pip install evalgate-cli                 # from PyPI, once released
-$ pip install git+https://github.com/jmweb-org/evalgate   # latest, available now
+$ pip install evalgate-cli   # installs the `evalgate` command
+$ uv tool install evalgate-cli   # isolated CLI install, if you use uv
 ```
 
 Pure standard library plus typer and rich. No heavy dependencies.
